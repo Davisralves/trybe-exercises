@@ -1,1 +1,1 @@
-Local dos exercicios da trybe
+:pencil2: Local dos exercicios da trybe
