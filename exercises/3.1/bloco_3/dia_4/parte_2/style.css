@@ -22,3 +22,6 @@ li bold{
     float: left;
     display: inline-block;
 }
+link{
+    background-color: aqua;
+}
