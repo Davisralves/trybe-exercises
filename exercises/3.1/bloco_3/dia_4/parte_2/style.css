@@ -1,0 +1,24 @@
+ul{
+    float: right;
+    margin-left: -1%;
+    
+}
+legend{
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+p{
+    float left;
+}
+.center{
+    text-align: center;
+}
+
+li{
+    text-align: center;
+}
+
+li bold{
+    float: left;
+    display: inline-block;
+}
