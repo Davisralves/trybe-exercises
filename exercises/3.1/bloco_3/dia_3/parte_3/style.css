@@ -1,0 +1,12 @@
+p:hover, h1:hover{
+    background-color: aqua;
+}
+p, h1{
+    text-align: center;
+}
+p:active, h1:active{
+color:blueviolet;
+}
+li{
+    font-family: fantasy;
+}
