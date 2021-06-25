@@ -7,7 +7,7 @@ for(let indice = n; indice > 0; indice -= 1){
     listaVazia.push(" ");
 }
 for(let indice = n; indice > 0; indice -= 1){
-    listaAsteristico.push('*')
+    listaAsteristico.push('*');
     listaVazia.pop();
     console.log(listaVazia.join('') + listaAsteristico.join(''))
 }
