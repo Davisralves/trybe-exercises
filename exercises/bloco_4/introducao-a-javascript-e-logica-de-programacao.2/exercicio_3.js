@@ -1,3 +1,4 @@
+// Agora inverta o lado do triângulo:
 let n = 5;
 n > 1 ? console.log() : console.log('Digite um valor maior que 1');
 listaAsteristico = [];
