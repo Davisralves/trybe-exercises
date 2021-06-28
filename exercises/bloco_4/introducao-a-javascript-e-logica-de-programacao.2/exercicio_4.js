@@ -1,8 +1,8 @@
 // Depois, faça uma pirâmide com n asteriscos de base:
 let n = 5;
 n > 1 ? console.log() : console.log('Digite um valor maior que 1');
-listaAsteristico = ['*']; // primeiro asteristico
-listaVazia = []; // Lista de espaços = n
+let listaAsteristico = ['*']; // primeiro asteristico
+let listaVazia = []; // Lista de espaços = n
 for(let indice = n; indice > 0; indice -= 1){ 
     listaVazia.push(" ");
 }
