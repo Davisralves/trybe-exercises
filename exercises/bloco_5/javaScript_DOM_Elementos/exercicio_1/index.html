@@ -58,13 +58,46 @@
   <body class='body'>
     <script>
    // 1. Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
-   let body = document.querySelector('.body');
-    let string = 'Exercício 5.2 - JavaScript DOM';
-    let h1 = document.createElement('h1');
-    h1.innerText = "Exercício 5.2 - JavaScript DOM";
-    body.appendChild(h1);
-  // 2. Adicione a tag div com a classe main-content como filho da tag body ;
-      
+      let body = document.querySelector('.body');
+      let h1 = document.createElement('h1');
+      h1.innerText = "Exercício 5.2 - JavaScript DOM";
+      body.appendChild(h1);
+ // 2. Adicione a tag div com a classe main-content como filho da tag body ;
+      let div = document.createElement('div');
+      div.className = "main-content";
+      body.appendChild(div);
+   // 3. Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
+      let divSun = document.createElement('div');
+      divSun.className = "center-content";
+      div = document.querySelector('.main-content'); 
+      div.appendChild(divSun);
+  // 4. Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
+      let p = document.createElement('p');
+      divSun = document.querySelector('.center-content');
+      p.innerText = "Algum texto :p";
+      divSun.appendChild(p);
+  // 5. Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
+      div = document.querySelector('.main-content')
+      divGrandSun = document.createElement('div');
+      divGrandSun.className = "left-content";
+      div.appendChild(divGrandSun); 
+  // 6. Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
+      divGrandSunRight = document.createElement('div');
+      divGrandSunRight.className = "right-content";
+      div.appendChild(divGrandSunRight); 
+  // 7. Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do div criado no passo 5;
+      img = document.createElement('img');
+      img.className = 'small-image';
+      img.innerText = "src ='https://picsum.photos/200'"
+      divGrandSun.appendChild(img);
+  // 8. Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
+    /*  let ul = document.createElement('ul');
+      for (let index = 0; index <= 10; index += 1){
+        let li = document.createElement('li');
+        li.innerText = 'index';
+        ul.appendChild(li);
+      } 
+      divGrandSunRight.appendChild(ul); *\
     </script>
   </body>
 </html>
