@@ -47,7 +47,7 @@ secondDiv.addEventListener('click', handleChangeTech);
 thirdDiv.addEventListener('click', handleChangeTech);
 
 // 3.
-input.addEventListener('input', evento)
+let kika = input.addEventListener('input', evento)
 function evento(input){
     let  texto = document.querySelector('.tech');
         texto.innerText = input.target.value;
