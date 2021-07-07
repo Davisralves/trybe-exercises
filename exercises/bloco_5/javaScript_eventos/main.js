@@ -53,4 +53,24 @@ function evento(input){
         texto.innerText = input.target.value;
         console.log('digitou') ;  
 }
+// 4.
+function createA() {
+  let h3 = document.querySelector('h3');
+  h3.innerText = '';
+  let a = document.createElement('a');
+  h3.appendChild(a);
+  a = document.querySelector('a');
+  a.innerText = ' Meu top 3 do Spotrybefy';
+  a.target = '_blank'
+  a.href = 'https://www.linkedin.com/feed/';
+}
+let h3 = document.querySelector('h3');
+h3.addEventListener('click',createA);
+/* myWebpage.addEventListener('dblclick', function() {
+  window.location.replace('https://blog.betrybe.com/');
+}); */
 
+// 5.
+myWebpage.addEventListener('mouseover', function() {
+  myWebpage.style.color = 'blue'
+});
