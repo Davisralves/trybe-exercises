@@ -5,33 +5,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario</title>
-  <link href="style.css" type="stylesheet">
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <form>
     <fieldset>
-      <input type="text" maxlength="40" placeholder="Nome" required>
-      <input type="email" maxlength="50" placeholder="E-mail" required>
-      <input type="text" maxlength="11" placeholder="Cpf" required>
-      <input type="text" maxlength="200" placeholder="Endereço" required>
-      <input type="text" maxlength="28" placeholder="Cidade" required>
-      <select required>
-        <option>Pernambuco</option>
-      </select required>
-      <label for="casa">
-      <input type="radio" id="casa" name="tipo" > Casa
-    </label>
-    <label for="apartamento">
-      <input type="radio" id="apartamento" name="tipo" > Apartamento
-    </label>
+      <input type="text" maxlength="40" placeholder="Nome" class="dados" required>
+      <input type="email" maxlength="50" placeholder="E-mail" class="dados" required>
+      <input type="text" maxlength="11" placeholder="Cpf" class="dados" required>
+      <input type="text" maxlength="200" placeholder="Endereço" class="dados" required>
+      <input type="text" maxlength="28" placeholder="Cidade" class="dados" required>
+      <p>
+        Estado:
+        <select required>
+        </select required>
+      </p>
+      <p>
+          Tipo:
+        <label for="casa">
+        <input type="radio" id="casa" name="tipo" > Casa
+      </label>
+      <label for="apartamento">
+        <input type="radio" id="apartamento" name="tipo" > Apartamento
+      </label>
+  </p>
     </fieldset>
     <fieldset>
       <p>Resumo do curriculo:</p>
       <textarea name="Resumo" id="curriculo" cols="100" rows="10" maxlength="1000" required></textarea>
-      <p>Descrição do cargo:
+      <p>Cargo:
       <input type="text" maxlength="40" required>
     </p>
-    
+    <p>Descrição do cargo:
+      <input type="text" maxlength="500" id="descricao de cargo" required>
+    </p>
+    <p>
+      Data de inicio:
+      <input type="date" required>
+    </p>
+    <button id="button" type="submit">Enviar</button>
 
     </fieldset>
   </form>

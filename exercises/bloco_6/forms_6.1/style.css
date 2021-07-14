@@ -1,0 +1,17 @@
+#button {
+  display: block;
+  float: right;
+  font-size: large;
+  font-style: italic;
+  border-radius: 4px;
+  border-color:  grey;
+  background-color: ;
+}
+p {
+  text-decoration: dotted;
+}
+.dados {
+  border-radius: 5px;
+  padding: 7px;
+  margin: 5px;
+}
