@@ -1,0 +1,39 @@
+#title {
+    text-align: center;
+}
+
+#texto {
+    display: block;
+    float: left;
+    width: 70%;
+    margin-left: 10%;
+}
+ul {
+
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+li {
+    display: inline-block;
+}
+
+.titulo {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.cor {
+    padding: 20px;
+    border-radius: 2px;
+}
+#azul {
+    background-color: blue;
+}
+#verde {
+    background-color: green;
+}
+#vermelho {
+    background-color: red;
+}
