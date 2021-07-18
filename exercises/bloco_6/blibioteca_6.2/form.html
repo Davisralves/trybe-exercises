@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+ <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+ <link rel="stylesheet" href="style.css">
+ <script src="jquery-3.6.0.min.js"></script>
+ <script src="bootstrap-5.0.2-dist/js" type="script.js/json"></script>
+ <script src="./path/to/just-validate.min.js"></script>
+</body>
+
+</head>
+<body>
+  <h1 class="text-center display-4">Formulario</h1>
+  <form>
+    <fieldset>
+      <label for="name" class="form-label" id="bo">Nome:</label>
+      <input maxlength="40" placeholder="Nome" class = "form-control" id="name" required>
+      <label for="email" class="form-label">Email:</label>
+      <input maxlength="50" min="10" placeholder="E-mail" class = "form-control" id="email" required>
+      <label for="Cpf" class="form-label">Cpf:</label>
+      <input maxlength="11" placeholder="Cpf" class = "form-control" id="Cpf" required>
+      <label for="Cpf" class="form-label">Endereço:</label>
+      <input maxlength="200" placeholder="Endereço" class = "form-control"  required>
+      <label for="Cpf" class="form-label">Cidade:</label>
+      <input maxlength="28" placeholder="Cidade" class = "form-control"  required>
+      <label for="Cpf" class="form-label">Estado:</label>
+        <select class="form-select" required>
+        </select required>
+      <p>
+          <h6>Tipo :</h6>
+        <label for="casa">
+        <input type="radio" id="casa" name="tipo" class="form-check-input"> Casa
+      </label>
+      <label for="apartamento">
+        <input type="radio" id="apartamento" name="tipo" class="form-check-input" > Apartamento
+      </label>
+  </p>
+    </fieldset>
+    <fieldset>
+      <div class="form-floating">Resumo do curriculo:
+      <textarea class="form-control" name="Resumo" id="curriculo" cols="100" rows="10" maxlength="1000" required></textarea>
+      </div>
+  <div>
+     <label for="cargo">Cargo:</label> 
+      <input class="form-label" type="text" maxlength="40" id="cargo" required>
+      <label for="descricao de cargo">Descrição de cargo</label> 
+      <input type="text" class="form-label" maxlength="500" id="descricao de cargo" required>
+      <label for="date">Data:</label> 
+      <input type="date" class="form-label" id="date" required>
+    <button class="btn btn-primary" id="button" type="submit">Enviar Formulario</button>
+  </div>
+    </fieldset>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
