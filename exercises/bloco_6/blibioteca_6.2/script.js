@@ -13,6 +13,8 @@ function submmit(event) {
   console.log(event);
 }
 
+
 gerarEstados();
 let button = document.querySelector('button');
 button.addEventListener('click', submmit);
+

@@ -9,15 +9,18 @@
  <link rel="stylesheet" href="style.css">
  <script src="jquery-3.6.0.min.js"></script>
  <script src="bootstrap-5.0.2-dist/js" type="script.js/json"></script>
+ <script src="./path/to/just-validate.min.js"></script>
+</body>
+
 </head>
 <body>
   <h1 class="text-center display-4">Formulario</h1>
   <form>
     <fieldset>
-      <label for="name" class="form-label" >Nome:</label>
+      <label for="name" class="form-label" id="bo">Nome:</label>
       <input maxlength="40" placeholder="Nome" class = "form-control" id="name" required>
       <label for="email" class="form-label">Email:</label>
-      <input maxlength="50" placeholder="E-mail" class = "form-control" id="email" required>
+      <input maxlength="50" min="10" placeholder="E-mail" class = "form-control" id="email" required>
       <label for="Cpf" class="form-label">Cpf:</label>
       <input maxlength="11" placeholder="Cpf" class = "form-control" id="Cpf" required>
       <label for="Cpf" class="form-label">Endereço:</label>
