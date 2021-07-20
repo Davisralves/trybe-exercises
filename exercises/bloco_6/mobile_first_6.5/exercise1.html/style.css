@@ -1,0 +1,44 @@
+body {
+
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: auto;
+    
+}
+
+p {
+  font-size: larger;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: large;
+}
+
+@media screen and (min-width: 600px) {
+  main div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body {
+    background-color: aliceblue;
+    margin: 5%;
+  }
+
+  p {
+    font-size: medium;
+  }
+ }
