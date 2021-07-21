@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h2 {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+body {
+  margin: 5%;
+}
+
+
+@media screen and (max-width: 600px) {
+  h4 {
+    font-size: larger;
+  }
+  h1 {
+    font-size: x-large;
+    margin: 20px 0 10px;
+  }
+  li {
+    font-size: large;
+  }
+  p {
+    font-size: large;
+  }
+}
+
+@media screen and (min-width: 601px) , (max-width: 1025) {
+  li {
+    font-size: x-large;
+  }
+}
