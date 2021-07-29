@@ -166,7 +166,9 @@ const expectedResul = false;
 function authorUnique() {
   let array = [];
   books.forEach(func = (objeto) => array.push(objeto.author.birthYear));
-  return books.some(func = (objeto) => { ( array.some( func = (data) => {data === objeto.author.birthYear }) ) === true });
+  return books.some(func = (objeto) => { 
+    array.some( func = (data) => {data === objeto.author.birthYear } ) === true 
+  });
 }
 
 assert.strictEqual(authorUnique(), expectedResul);
