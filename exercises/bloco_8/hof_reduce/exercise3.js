@@ -1,5 +1,3 @@
-const assert = require('assert');
-
 const books = [
   {
     id: 1,
@@ -63,12 +61,12 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
-const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
+const expectedResult = 43;
 
-function reduceNames() {
-  return books.reduce((acc, object, index) => index !== (books.length - 1) ? '' + acc + `${object.author.name}, `: '' + acc + `${object.author.name}.`, '');
+function averageAge() {
+  return books.reduce((acc, object, index) => index !== books.length - 1 ? acc + (object.releaseYear - object.author.birthYear) : (acc /(index)), 0);
 }
 
-assert.strictEqual(reduceNames(), expectedResult);
-//module.exports = books;
+console.log(averageAge());
+//return books.reduce((acc, object) => acc + (object.author.birthYear - 2021)/2)
+// const books = require('/home/davi/Git/trybe-exercises/exercises/bloco_8/hof_reduce/exercise2.js');
