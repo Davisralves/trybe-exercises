@@ -71,4 +71,4 @@ function reduceNames() {
 }
 
 assert.strictEqual(reduceNames(), expectedResult);
-//module.exports = books;
+module.exports = books;
