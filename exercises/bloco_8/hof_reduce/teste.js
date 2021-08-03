@@ -1,12 +1,11 @@
-const mapper = (acc, current) => {
-  acc + current.map((objeto) => acc.push(objeto));
-  return acc;
-}
 
-const arrays = [
-  ['1', '2', '3'],
-  [true],
-  [4, 5, 6],
+const names = [
+  'Aanemarie', 'Adervandes', 'Akifusa',
+  'Abegildo', 'Adicellia', 'Aladonata',
+  'Abeladerco', 'Adieidy', 'Alarucha',
 ];
-
-console.log(arrays.reduce(mapper, []));
+  let regexp = /a/g ;
+  let str = 'aaa';
+  
+  console.log(str.match(regexp).length);
+  // Array ['test1', 'test2']

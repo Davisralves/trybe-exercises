@@ -1,5 +1,5 @@
 const books = require('/home/davi/Git/trybe-exercises/exercises/bloco_8/hof_reduce/exercise2.js');
-
+const assert = require('assert');
 
 const expectedResult = {
   id: 1,
@@ -16,5 +16,4 @@ function longestNamedBook() {
   return books.reduce((biggerBook, object) =>  biggerBook.name.length > object.name.length ? biggerBook : object);
 }
 
-console.log(longestNamedBook());
-//assert.deepStrictEqual(longestNamedBook(), expectedResult);
+assert.deepStrictEqual(longestNamedBook(), expectedResult);
