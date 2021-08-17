@@ -42,3 +42,7 @@ const professionalBoard = [
 const searchEmployee = (id, detail) => {
   // Implemente seu código aqui
 };
+
+module.exports = {
+  searchEmployee,
+};
