@@ -25,8 +25,11 @@ test('Testando uppercase, Deixa texto em maiusculo', (done) => {
     }
   });
 });
-
+ 
 describe('Fazendo testes dos itens relacionados a função findUserById', () => {
+
+  expect.assertions(1);
+
   test('Testando se findUserById retorna corretamente ao se dar o id correto', (done) => {
     findUserById(1).then((result) => {
       try {
@@ -37,14 +40,12 @@ describe('Fazendo testes dos itens relacionados a função findUserById', () => 
       }
     });
   });
-  test('Testar Se o user Retorna corretamente a um erro caso o usario não seja encontrado', () => {
-    findUserById(1).then((result) => {
-      try {
-        expect(result).toEqual('Erro ! Não deveria funcionar');
-        done(result);
-      } catch(erro) {
-        done(erro);
-      }
+
+  test('Testar Se o user Retorna corretamente a um erro caso o usario não seja encontrado', async () => {
+    try {
+      await findUserById(3);
+    } catch (error) {
+      expect(error).toEqual(new Error(`User with 3 not found.`));
+    }
     });
-  })
-});
+  });
