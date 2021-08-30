@@ -45,7 +45,7 @@ describe('Fazendo testes dos itens relacionados a função findUserById', () => 
     try {
       await findUserById(3);
     } catch (error) {
-      expect(error).toEqual(new Error(`User with 3 not found.`));
+      expect(error).toEqual(Error(`User with 3 not found.`));
     }
     });
   });
