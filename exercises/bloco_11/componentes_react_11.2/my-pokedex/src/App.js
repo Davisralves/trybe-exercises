@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Pokemon from './pokemon';
+import React from 'react';
+import Pokedex from './pokedex';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <main>
+        <h1>My pokedex</h1>
+        <section className = 'pokedexSection'>
+          <Pokedex/>
+        </section>
+      </main>
+    );
+  }
 }
 
 export default App;
