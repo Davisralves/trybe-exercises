@@ -1,10 +1,13 @@
-import './App.css';
 import Form from './form';
+import React from 'react';
 
-function App() {
-  return (
-    <Form />
-  );
+class App extends React.Component () {
+  render() {
+    return (
+      <Form />
+    );
+  }
+
 }
 
 
