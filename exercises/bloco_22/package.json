@@ -1,0 +1,16 @@
+{
+  "name": "imc",
+  "version": "1.0.0",
+  "description": "Calculo do imc",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node ."
+  },
+  "author": "Davi",
+  "license": "ISC",
+  "dependencies": {
+    "print-colors": "^1.0.1",
+    "readline-sync": "^1.4.10"
+  }
+}
