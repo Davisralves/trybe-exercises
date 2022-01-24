@@ -2,6 +2,8 @@ const express = require("express");
 
 require("dotenv").config();
 
+var bodyParser = require('body-parser')
+
 const app = express();
 
 const ping = require("./controllers/ping");
@@ -9,6 +11,8 @@ const ping = require("./controllers/ping");
 const { validateCep } = require("./controllers/cep");
 
 const PORT = process.env.PORT;
+
+app.use(bodyParser.json());
 
 app.get("/ping", ping);
 

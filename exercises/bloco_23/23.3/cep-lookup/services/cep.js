@@ -2,16 +2,11 @@ const { findcep } = require("../models/cep");
 
 const searchCep = async (cep) => {
 	const cepObject = await findcep(cep);
+  console.log(cepObject, 'services')
 	if (!cepObject) {
 		return { error: { code: "notFound", message: "CEP não encontrado" } };
 	}
-	return {
-    cep: "01001-000",
-    logradouro: "Praça da Sé",
-    bairro: "Sé",
-    localidade: "São Paulo",
-    uf: "SP",
-  };
+	return {cepObject};
 };
 
 module.exports = {

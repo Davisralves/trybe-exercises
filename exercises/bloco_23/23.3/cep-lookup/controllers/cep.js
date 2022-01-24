@@ -10,7 +10,7 @@ const validateCep = async (req, res) => {
 			.status(400)
 			.json({ error: { code: "invalidData", message: "CEP inválido" } });
 
-	const { error, cep: cepObject } = await searchCep(cep);
+	const { error, cepObject } = await searchCep(cep);
 
 	if (error) return res.status(404).json(error);
 

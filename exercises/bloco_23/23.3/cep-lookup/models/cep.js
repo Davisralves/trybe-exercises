@@ -1,9 +1,9 @@
-const connection = require('./connection');
+const fetch = require('node-fetch');
 
 const findcep = async (cep) => {
-  console.log(process.env.MYSQL_DB_NAME);
-  const [cepObject] = await connection.execute(`SELECT * FROM ceps WHERE cep=${cep}`);
-  return cepObject;
+  const request = await fetch('https://viacep.com.br/ws/01001000/json/');
+  console.log(request.Response, 'models');
+  return request;
 };
 
 module.exports = {
