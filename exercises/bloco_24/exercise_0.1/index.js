@@ -4,13 +4,13 @@ const express = require('express');
 
 const app = express();
 
-const { Book } = require('./models');
+const {Book} = require('./models');
 
 app.use(express.json());
 
 
-app.get('/books', (req, res) => {
-  const books = Book.findAll();
+app.get('/books', async (req, res) => {
+  const books = await Book.findAll();
   return res.status(200).json(books);
 })
 

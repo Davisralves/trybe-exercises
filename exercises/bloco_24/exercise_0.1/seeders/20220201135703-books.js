@@ -8,12 +8,14 @@ module.exports = {
         author: 'Leonador de caprio',
         pageQuantity: 543,
         createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
+        updatedAt: Sequelize.literal('CURRENT_TIMESTAMP'),
       },
       {
         title: 'monaliza',
         author: 'Leonador da vince',
         pageQuantity: 288,
         createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
+        updatedAt: Sequelize.literal('CURRENT_TIMESTAMP'),
       },
     ], {}),
 
