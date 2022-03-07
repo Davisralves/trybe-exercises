@@ -1,4 +1,22 @@
 var arrayDe6Numeros;
+var person = /** @class */ (function () {
+    function person(name, birthName) {
+        if (name.length >= 3) {
+            this.name = name;
+        }
+        var regex = /\d\d\/\d\d\/\d\d\d\d/;
+        if (regex.test(birthName) && parseInt(birthName.slice(6)) >= 1902) {
+            this.birthName = birthName;
+        }
+    }
+    return person;
+}());
+var person1 = new person('josé', '29/06/1997');
+var person2 = new person('Kiko', '29/06/1800');
+console.log(person1.name);
+console.log(person1.birthName);
+console.log(person2.name);
+console.log(person2.birthName);
 var Estudante = /** @class */ (function () {
     function Estudante(matricula, nome, notas) {
         this.matricula = matricula;
