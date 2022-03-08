@@ -1,22 +1,27 @@
 let arrayDe6Numeros: [number, number, number, number, number, number]
 
-class person {
-  name: string;
-  birthName: string;
-  constructor(name: string, birthName: string) {
-    if(name.length >= 3) {
-      this.name = name
-    }
-    const regex = /\d\d\/\d\d\/\d\d\d\d/
-    console.log(regex.test(birthName), parseInt(birthName.slice(6)))
-    if(regex.test(birthName) && parseInt(birthName.slice(6)) >= 1902) {
-      this.birthName = birthName;
-    }
+class Person {
+  constructor(protected _name: string, protected _birthName: string) {
+    // const regex = /\d\d\/\d\d\/\d\d\d\d/
+    // console.log(regex.test(birthName), parseInt(birthName.slice(6)))
+    // if(regex.test(birthName) && parseInt(birthName.slice(6)) >= 1902) {
+    //   this._birthName = _birthName;
+    // }
+  }
+
+  get name() {
+    if(this._name.length >= 3) {
+      return this._name
+    } return 'Nome precisa ter pelo menos 3 caracteres'
+  }
+
+  get birthName() {
+    return this._birthName
   }
 }
 
-const person1 = new person('josé', '29/06/1997');
-const person2 = new person('Kiko', '29/06/1800');
+const person1 = new Person('josé', '29/06/1997');
+const person2 = new Person('Kiko', '29/06/1800');
 
 console.log(person1.name)
 console.log(person1.birthName)
@@ -25,15 +30,10 @@ console.log(person2.birthName)
 
 
 
-class Estudante {
-  matricula: string;
-  nome: string;
-  notas: typeof arrayDe6Numeros;
+class Estudante extends Person{
 
-  constructor(matricula: string, nome: string, notas: typeof arrayDe6Numeros) {
-    this.matricula = matricula;
-    this.nome = nome;
-    this.notas = notas;
+  constructor(protected _name: string, protected _birthName: string, public matricula: string, public notas: typeof arrayDe6Numeros, ) {
+    super(_name, _birthName);
   }
 
   somaDasNotas (): number {
@@ -45,6 +45,6 @@ class Estudante {
   }
 }
 const notas: typeof arrayDe6Numeros = [7, 7, 7, 8, 8, 8];
-const estudante = new Estudante('siajdj209jdqoi', 'Davi', notas );
-console.log(estudante.nome, estudante.somaDasNotas(), estudante.calculaMedia())
+const estudante = new Estudante('Di', '29/06/1997', '92e1y92178y912', notas) ;
+console.log(estudante.name, estudante.birthName, estudante.somaDasNotas(), estudante.calculaMedia())
 
