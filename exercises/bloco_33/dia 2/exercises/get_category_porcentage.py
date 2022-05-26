@@ -11,10 +11,11 @@ with open("books.txt") as file:
         categories[categorie] = 1
       categories[categorie] += 1
 
+# fonte: https://pythonguides.com/python-dictionary-to-csv/#:~:text=In%20Python%20to%20convert%20a,works%20like%20the%20dictwriter().
+
 with open('books.csv', 'w', newline='') as csvfile:
   header_key = ["category", "porcentage"]
   new_value = csv.DictWriter(csvfile, fieldnames=header_key)
 
-  new_value.writeheader()
   for new_key in categories:
     new_value.writerow({'category': new_key, "porcentage": categories[new_key] / totalBooks}) 
