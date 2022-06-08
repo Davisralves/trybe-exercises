@@ -71,6 +71,7 @@ if __name__ == "__main__":
     seguidores_email = ["Claudia", "Marcia"]
 
     meuPerfil = Perfil()
+    meuPerfil.adicionarNotificador()
     NotificadorMensagem(meuPerfil, seguidores_mensagem)
     NotificadorPushNotification(meuPerfil, seguidores_push_notification)
     emailNotificator = NotificadorEmail(meuPerfil, seguidores_email)
