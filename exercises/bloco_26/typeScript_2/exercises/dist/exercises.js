@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const _1 = require(".");
+console.log('oi');
+const carTop = new _1.Car('Toyota', _1.Color.preta, 4);
+console.log(carTop);
+console.log(carTop.honk());
+console.log(carTop.closeTheDor(_1.Porta.porta1));
+console.log(carTop.openTheDor(_1.Porta.porta2));
+console.log(carTop.stop());
+console.log(carTop.turn("rigth"));

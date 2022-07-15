@@ -11,6 +11,7 @@ const getImcIndex = (imc) => {
   if(imc > 39.9) return 5;
 };
 
+const IndexInit = ['','','','','']; // é possivel fazer utilizandoa array em vez de 5 variaveis
 
 const imcTable = (imc) => {
   const imcIndex = getImcIndex(imc);
